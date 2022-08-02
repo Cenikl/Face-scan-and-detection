@@ -1,0 +1,224 @@
+h1,h2,h3,h4,a {
+    color: white;
+}
+p{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+hr{
+    border: 1px solid whitesmoke;
+    width: 65%;
+}
+body {
+    background-image: url("bg.jpg");
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(0,0,0,0.7);
+    width: 100%;
+    height: 8%;
+}
+.headerLeft {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    font-family:"Droid Serif";
+}
+.headerLeft img {
+    width: 60px;
+    height: 70px;
+}
+
+.headerRight {
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+    margin-top: 8px;
+    background-color: lightskyblue;
+    padding: 15px;
+    border-radius: 5px;
+}
+.headerRight a {
+    text-decoration: none;
+    font-family:"Droid Serif";
+}
+.headerRight:hover {
+    background-color: gray;
+}
+.content {
+    border-radius: 7px;
+    background-color:rgba(255,255,255,0.3);
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    width: 75%;
+    height: 100%;
+}
+.picStat {
+    display: flex;
+    flex-direction: row;
+}
+.pic {
+    flex-basis: 40%;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    margin: 6px;
+    height: 100%;
+}
+.IMG {
+    border: 1px solid whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+.border {
+    position: absolute;
+    z-index: 1;
+    background-color:rgba(0,0,0,0);
+}
+.status {
+    flex-basis: 60%;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    margin: 6px;
+    height: 100%;
+}
+#opResult {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#opResult th{
+    color: rgb(0,5,0);
+    display: grid;
+    margin: auto;
+    border: 5px solid ghostwhite;
+    width: 100%;
+    height: 100%;
+    font-size: 23px;
+    font-family: Calibri;
+    border-left: 5px solid lightblue;
+    background-color: ghostwhite;
+}
+#opResult td{
+    color: rgb(0,5,0);
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 23px;
+    border-left: 1px solid lightskyblue;
+    background-color: ghostwhite;
+    border-radius: 5px;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+input {
+    display: none;
+}
+label:hover{
+    background-color: whitesmoke;
+    color: lightskyblue;
+}
+.pic form {
+    margin: 15px;
+}
+label {
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 7px;
+}
+@keyframes anime {
+    0% { width: 50px;height:50px}
+    50% {width: 90px;height:90px}
+    100% {width: 50px;height:50px}
+}
+.first {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 20px;
+    border-radius: 100px;
+}
+.second {
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    margin: 20px;
+    border-radius: 100px;
+}
+.third {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 20px;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 800px){
+    body {
+        width:100%;
+    }
+    .header  {
+        width: 100%;
+        font-size: 15px;
+    }
+    .headerLeft img {
+        width: 1px;
+        height: 1px;
+    }
+    .headerLeft {
+        font-size: 15px;
+    }
+
+    .headerRight a{
+        width: 15px;
+        height: 15px;
+    }
+    .content {
+        border-radius: 7px;
+        background-color:rgba(255,255,255,0.2);
+        text-align: center;
+        margin-top: 100px;
+        height: 100%;
+    }
+    .picStat {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 359px){
+    .headerLeft {
+        margin: auto;
+    }
+    .headerRight {
+        position: absolute;
+        right: 0;
+        margin-right: 0px;
+        margin-top: 0px;
+        padding: 0px;
+        border-radius: 0px;
+        font-size: 0;
+    }
+    .headerRight a {
+        font-size: 0;
+        text-decoration: none;
+        font-family:"Droid Serif";
+    }
+}
+
